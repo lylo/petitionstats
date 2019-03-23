@@ -5,12 +5,12 @@ class HomeController < ApplicationController
   def index
     json = HomeController.feed
 
+    @total_signatures = json["data"]["attributes"]["signature_count"]
+
     country_hash = {}
-    @total_signatures = 0
     json["data"]["attributes"]["signatures_by_country"].map do |country|
       signature_count = country["signature_count"].to_i
       country_hash[country["name"]] = signature_count
-      @total_signatures += signature_count
     end
 
     @country_hash = Hash[country_hash.sort_by{|k, v| v}.reverse]
