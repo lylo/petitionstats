@@ -1,0 +1,29 @@
+<h1 class="ui header">
+  Article 50 Petition Stats
+</h1>
+
+<p>
+  Currently the total number of signatures
+  is <strong><%= number_with_delimiter @total_signatures %></strong>.
+</p>
+
+<table class="ui celled table">
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th>Number of signatures</th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @country_hash.each do |country, count| %>
+  <tr>
+    <td><%= country %></td>
+    <td>
+      <%= number_with_delimiter count %>
+      (<%= number_to_percentage count.to_f / @total_signatures * 100, precision: 2 %>)
+    </td>
+  </tr>
+  <% end %>
+  </tbody>
+</table>

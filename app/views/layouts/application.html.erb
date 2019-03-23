@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Article 50 Petition Stats</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <style type="text/css">
+      .wrapper {
+        margin: 3em 0;
+      }
+
+      .footer {
+        border: 1px solid red;
+        margin-top: 3em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="ui text container">
+        <%= yield %>
+      </div>
+    </div>
+    <div class="ui inverted vertical footer segment">
+      <div class="ui container">
+        GitHub link
+      </div>
+    </div>
+  </body>
+</html>
