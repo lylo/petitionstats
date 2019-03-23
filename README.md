@@ -1,24 +1,5 @@
-# README
+# Article 50 Petition Stats
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+There is currently a petition running in the UK to [Revoke Article 50 and remain in the EU](https://petition.parliament.uk/petitions/241584). I was interested to know which countries these votes were coming from. You can see the data below, which is based on the [official data feed](https://petition.parliament.uk/petitions/241584.json).
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+I plan to make this app work for all petitions next.
