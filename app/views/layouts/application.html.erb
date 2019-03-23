@@ -17,18 +17,25 @@
         border: 1px solid red;
         margin-top: 3em;
       }
+
+      a i {
+        color: white;
+      }
     </style>
   </head>
 
   <body>
+    <div class="ui green inverted vertical segment">
+    </div>
     <div class="wrapper">
-      <div class="ui text container">
+      <div class="ui container">
         <%= yield %>
       </div>
     </div>
-    <div class="ui inverted vertical footer segment">
+    <div class="ui green inverted vertical footer segment">
       <div class="ui center aligned container">
-        <%= link_to "View code on GitHub", "https://github.com/lylo/petitionstats" %>
+        <a href="https://github.com/lylo/petitionstats"><i class="github icon"></i></a>
+        <a href="https://twitter.com/lylo"><i class="twitter icon"></i></a>
       </div>
     </div>
   </body>
